@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+
+        <EditText
+            android:id="@+id/edtV_numero"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="50"
+            android:ems="10"
+            android:hint="Número"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnLoad"
+            android:layout_width="9dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="50"
+            android:background="@drawable/button_rounded"
+            android:text="Cargar"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnAtras"
+            android:layout_width="63dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="50"
+            android:background="@drawable/button_rounded_border"
+            android:text="Volver" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll03"
+        android:id="@+id/lvLista">
+
+    </ListView>
+
+
+</RelativeLayout>
